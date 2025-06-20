@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Page](README.md)
+* [Excel Online Connector](README.md)
