@@ -148,4 +148,4 @@ If your URL has `%7B` and `%7D`, just copy the part in between and ignore the pe
 
 ***
 
-**Note:** For detailed instructions on creating export tasks and managing exports, refer to the **Contact Us on info@niyulabs.com.**
+**Note:** For detailed instructions on creating export tasks and managing exports, **Contact Us at info@niyulabs.com.**
