@@ -59,7 +59,7 @@ text +----------------+           Secure API Calls         +--------------------
 
 ### How It Works:
 
-* **Real-Time Data Access:** No manual exports or imports; data flows automatically.
+* **Faster Data Sync:** No manual exports or imports; data flows automatically.
 * **Enterprise Security:** Uses Microsoft’s secure authentication protocols.
 * **Customizable:** Export only the data you need to the exact sheet and file you want.
 * **Collaboration-Ready:** Excel files can be shared and edited by multiple users simultaneously.

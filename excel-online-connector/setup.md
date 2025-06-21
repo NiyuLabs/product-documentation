@@ -15,7 +15,7 @@ description: >-
   * Under **Overview**, you will see the **Tenant ID** (a GUID format, e.g., `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`).
   * Click the copy icon to copy it to your clipboard[1](https://www.odoo.com/documentation/18.0/applications/general/users/azure.html)[6](https://apps.odoo.com/apps/modules/13.0/odoo_microsoft_azure_sso).
 
-***
+<figure><img src="../.gitbook/assets/Screenshot from 2025-06-21 12-47-44.png" alt=""><figcaption></figcaption></figure>
 
 ### **2. Client ID (Application ID)**
 
@@ -24,6 +24,8 @@ description: >-
   * Select **App registrations**.
   * Click on the application you registered for Odoo integration.
   * Under the **Overview** section, you’ll find the **Application (client) ID**. Copy this value[2](https://www.odoo.com/documentation/18.0/applications/general/email_communication/azure_oauth.html)[3](https://apps.odoo.com/apps/modules/14.0/microsoft_office_365_integration)[4](https://apps.odoo.com/apps/modules/17.0/sh_office365_connector)[6](https://apps.odoo.com/apps/modules/13.0/odoo_microsoft_azure_sso).
+
+<figure><img src="../.gitbook/assets/Screenshot from 2025-06-21 13-01-12.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -35,6 +37,8 @@ description: >-
   * Add a description and select an expiry period, then click **Add**.
   * Copy the **Value** immediately after creation (you won’t be able to see it again). This is your **Client Secret**[2](https://www.odoo.com/documentation/18.0/applications/general/email_communication/azure_oauth.html)[3](https://apps.odoo.com/apps/modules/14.0/microsoft_office_365_integration)[4](https://apps.odoo.com/apps/modules/17.0/sh_office365_connector)[6](https://apps.odoo.com/apps/modules/13.0/odoo_microsoft_azure_sso).
 
+<figure><img src="../.gitbook/assets/Screenshot from 2025-06-21 13-02-01.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### **4. User UPN (User Principal Name)**
@@ -44,6 +48,8 @@ description: >-
   * Navigate to **Users** > **Active users**.
   * Locate the user whose OneDrive will be used for Excel exports.
   * The **User Principal Name** is their login email address (e.g., `user@yourcompany.com`)[6](https://apps.odoo.com/apps/modules/13.0/odoo_microsoft_azure_sso).
+
+<figure><img src="../.gitbook/assets/Screenshot from 2025-06-21 12-55-35.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
