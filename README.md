@@ -29,10 +29,10 @@ The **Odoo Excel Online Connector** empowers you to seamlessly integrate your Od
 
 ### Quick Navigation <a href="#quick-navigation" id="quick-navigation"></a>
 
-* [Introduction](https://www.perplexity.ai/search/rpc-error-odoo-server-error-oc-WgAnDunBQpKhtPBPMVV0gg)
-* [Key Features](https://www.perplexity.ai/search/rpc-error-odoo-server-error-oc-WgAnDunBQpKhtPBPMVV0gg)
-* [Setup & Installation](https://www.perplexity.ai/search/rpc-error-odoo-server-error-oc-WgAnDunBQpKhtPBPMVV0gg)
-* [Initial Setup](https://www.perplexity.ai/search/rpc-error-odoo-server-error-oc-WgAnDunBQpKhtPBPMVV0gg)
+* [Introduction](https://niyulabs.gitbook.io/doc/excel-online-connector/introduction)
+* [Key Features](https://niyulabs.gitbook.io/doc/excel-online-connector/key-features)
+* [Setup ](https://niyulabs.gitbook.io/doc/excel-online-connector/setup)
+* [Installation & Initial Setup](https://niyulabs.gitbook.io/doc/excel-online-connector/installation-and-initial-setup)
 
 ***
 
