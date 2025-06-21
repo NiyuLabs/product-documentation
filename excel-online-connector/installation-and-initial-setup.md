@@ -74,7 +74,78 @@ You will need to provide the following information, which you can find as descri
 * After successful setup, navigate to the **Excel Online Connector** app.
 * Create your first export task by selecting the Odoo model, fields, and target Excel file.
 * Export data and enjoy seamless integration between Odoo and Excel Online.
+* When creating an export task in the Odoo Excel Online Connector, you’ll be asked to enter the **Workbook File ID**. This ID uniquely identifies your Excel file in OneDrive or SharePoint and is required for the connector to write data to the correct file.
+
+### **Where to Find the Workbook File ID**
+
+1.  **Open your Excel file in OneDrive or SharePoint.**\
+    For example, your file might have a URL like this:
+
+    ```
+    texthttps://niyulabs-my.sharepoint.com/:x:/r/personal/rohitdhiman_niyulabs_onmicrosoft_com/_layouts/15/doc.aspx?sourcedoc=%7B0d563bab-6865-4bea-934e-fb2516578f81%7D&action=edit
+    ```
+2. **Locate the `sourcedoc` parameter in the URL.**
+   *   In your example, the parameter is:
+
+       ```
+       textsourcedoc=%7B0d563bab-6865-4bea-934e-fb2516578f81%7D
+       ```
+   * The value between `%7B` and `%7D` (which are URL-encoded curly braces `{}`) is your Workbook File ID.
+3. **Decode the File ID.**
+   * `%7B` = `{` and `%7D` = `}`
+   *   The actual File ID is:
+
+       ```
+       text0d563bab-6865-4bea-934e-fb2516578f81
+       ```
+4. **Copy only the GUID (without the curly braces or percent signs).**
+   *   **Workbook File ID:**
+
+       ```
+       text0d563bab-6865-4bea-934e-fb2516578f81
+       ```
+
+### **How to Recognize the Workbook File ID in the URL**
+
+* It is the long string of letters and numbers (a GUID) found in the `sourcedoc` parameter of the URL.
+*   It always looks like:
+
+    ```
+    textsourcedoc=%7Bxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx%7D
+    ```
+
+    or
+
+    ```
+    textsourcedoc={xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}
+    ```
+* The part inside the curly braces `{}` is your File ID.
+
+### **Where to Enter the Workbook File ID**
+
+* When creating or editing an export task in Odoo, paste this File ID into the **Workbook File ID** field.
 
 ***
 
-**Note:** For detailed instructions on creating export tasks and managing exports, refer to the **Creating Export Tasks** section of this manual.
+### **Visual Example**
+
+**URL Example:**
+
+```
+texthttps://niyulabs-my.sharepoint.com/:x:/r/personal/rohitdhiman_niyulabs_onmicrosoft_com/_layouts/15/doc.aspx?sourcedoc=%7B0d563bab-6865-4bea-934e-fb2516578f81%7D&action=edit
+```
+
+**Extracted Workbook File ID:**
+
+```
+text0d563bab-6865-4bea-934e-fb2516578f81
+```
+
+***
+
+**Tip:**\
+If your URL has `%7B` and `%7D`, just copy the part in between and ignore the percent signs and curly braces.
+
+***
+
+**Note:** For detailed instructions on creating export tasks and managing exports, refer to the **Contact Us on info@niyulabs.com.**

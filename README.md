@@ -83,4 +83,4 @@ text +----------------+           Secure API Calls         +--------------------
 ***
 
 **Ready to get started?**\
-Jump to the [Setup & Installation](https://www.perplexity.ai/search/rpc-error-odoo-server-error-oc-WgAnDunBQpKhtPBPMVV0gg) section or explore the [Key Features](https://www.perplexity.ai/search/rpc-error-odoo-server-error-oc-WgAnDunBQpKhtPBPMVV0gg) to see what this connector can do for you.
+Jump to the [Installation & Initial Setup](https://niyulabs.gitbook.io/doc/excel-online-connector/installation-and-initial-setup) section or explore the [Key Features](https://niyulabs.gitbook.io/doc/excel-online-connector/key-features) to see what this connector can do for you.
