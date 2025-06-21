@@ -1,0 +1,11 @@
+# Introduction
+
+The **Odoo Excel Online Connector** is a powerful and versatile integration module designed to bridge the gap between your Odoo ERP system and Microsoft Excel Online. In today’s fast-paced business environment, timely access to accurate data is critical for making informed decisions. This connector empowers users to export and synchronize data seamlessly from Odoo directly into Excel spreadsheets stored on OneDrive, enabling real-time data analysis, reporting, and collaboration within the familiar Excel interface.
+
+Unlike traditional export methods that require manual downloads and uploads, the Excel Online Connector leverages Microsoft’s Graph API and Azure Active Directory authentication to provide a secure, automated, and efficient data transfer mechanism. By configuring essential credentials such as Tenant ID, Client ID, Client Secret, and User Principal Name (UPN), the connector ensures that all data exchanges comply with enterprise-grade security standards, maintaining data integrity and confidentiality.
+
+Users can create customized export tasks by selecting specific Odoo models and fields, tailoring the data output to their unique business needs. This flexibility allows finance teams to generate up-to-date financial reports, sales teams to monitor pipeline metrics, and inventory managers to track stock levels—all directly within Excel Online. The connector supports exporting data to designated Excel workbooks and sheets identified by their unique file IDs, streamlining workflows and eliminating data silos.
+
+Additionally, the connector handles token management and drive identification automatically, reducing administrative overhead and minimizing the risk of authentication errors. Scheduled exports and manual refresh options further enhance usability, enabling organizations to maintain continuously updated datasets for accurate decision-making.
+
+By integrating Odoo with Excel Online, this connector not only enhances operational efficiency but also empowers users to leverage Excel’s advanced analytical tools, pivot tables, and charting capabilities without leaving the Odoo ecosystem. It is an indispensable tool for businesses aiming to combine the robustness of Odoo ERP with the flexibility and familiarity of Excel Online for superior data-driven insights and collaboration.\
