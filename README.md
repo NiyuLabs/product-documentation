@@ -38,11 +38,47 @@ The **Odoo Excel Online Connector** empowers you to seamlessly integrate your Od
 
 ### Visual Overview <a href="#visual-overview" id="visual-overview"></a>
 
-> _Diagram or screenshot suggestion:_
->
-> Odoo ERP → (Secure API) → Excel Online (OneDrive)
->
-> _“Automated, secure, and flexible data integration for your business.”_
+```
+text +----------------+           Secure API Calls         +---------------------+
+     |                |  ------------------------------->  |                     |
+     |    Odoo ERP    |                                    |    Microsoft Graph  |
+     |  (Your Data)   |  <-------------------------------  |    API & OneDrive   |
+     |                |           Authentication & Data    |                     |
+     +----------------+                                    +---------------------+
+          |                                                       |
+          |                                                       |
+          |                                                       |
+          v                                                       v
+     +---------------------------------------------------------------+
+     |                                                               |
+     |                  Excel Online Workbook                        |
+     |                (Stored in OneDrive)                           |
+     |                                                               |
+     +--------------------------------------------------------------
+```
+
+### How It Works:
+
+* **Real-Time Data Access:** No manual exports or imports; data flows automatically.
+* **Enterprise Security:** Uses Microsoft’s secure authentication protocols.
+* **Customizable:** Export only the data you need to the exact sheet and file you want.
+* **Collaboration-Ready:** Excel files can be shared and edited by multiple users simultaneously.
+
+### Benefits of This Integration:
+
+***
+
+1. **Data Selection in Odoo:**\
+   Users select the Odoo models and fields they want to export via the connector’s export tasks.
+2. **Secure Authentication:**\
+   The connector uses Azure AD credentials (Tenant ID, Client ID, Client Secret, User UPN) to authenticate with Microsoft Graph API securely.
+3. **Token and Drive Management:**\
+   Access tokens and OneDrive Drive IDs are automatically managed by the connector to maintain uninterrupted access.
+4. **Data Export:**\
+   Data is pushed from Odoo directly into the specified Excel workbook and sheet on OneDrive.
+5. **Excel Online Access:**\
+   Users can open the Excel file online or via desktop Excel, with the latest Odoo data available for analysis, reporting, and collaboration.\
+
 
 ***
 
