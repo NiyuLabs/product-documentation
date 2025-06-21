@@ -20,7 +20,7 @@ The **Odoo Excel Online Connector** empowers you to seamlessly integrate your Od
 
 ### Why Use the Excel Online Connector? <a href="#why-use-the-excel-online-connector" id="why-use-the-excel-online-connector"></a>
 
-* **Real-Time Data Sync:** Always have the latest Odoo data in Excel for decision-making.
+* **Faster Data Sync:** Always have the latest Odoo data in Excel for decision-making.
 * **Secure Integration:** Enterprise-grade security with Azure AD1.
 * **Customizable Exports:** Export exactly the data you need, when you need it.
 * **No More Manual Work:** Automate your reporting and analytics workflows.
