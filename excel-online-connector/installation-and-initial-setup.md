@@ -146,6 +146,25 @@ text0d563bab-6865-4bea-934e-fb2516578f81
 **Tip:**\
 If your URL has `%7B` and `%7D`, just copy the part in between and ignore the percent signs and curly braces.
 
-***
+## ⚠️ Keeping Sheet Names in Sync
+
+If you ever rename your worksheet in **Excel Online** or in **SharePoint**, you must update the corresponding **Sheet Name** field in your Odoo Export Task. Otherwise, Odoo will continue to look for the old tab name and your export will fail.
+
+**How to update:**
+
+1. **Rename the sheet** in Excel Online or in SharePoint.\
+   Example: change the tab from `SalesData` to `MonthlySales`.
+2. **Refresh both** your browser pages:
+   * In **Excel Online / SharePoint**: reload the file so any embedded tables or links update.
+   * In **Odoo**: reload the Export Task page (Ctrl + R or F5) so Odoo picks up the new sheet list.
+3. **Open your Odoo Export Task** from the App Drawer.\
+   Navigate to **App Drawer → Export Online Connector → Excel Export Task → New Task**
+4. **Edit the “Sheet Name”** field:
+   * Delete the old name
+   * Enter **exactly** the new sheet name (e.g. `MonthlySales`)
+5. **Save the task** and then click **Export** \
+   Odoo will now write to the correct sheet.
+
+> **Tip:** Make sure you rename the same tab in both Excel Online and SharePoint—so that both Odoo and SharePoint point to the exact same sheet.
 
 **Note:** For detailed instructions on creating export tasks and managing exports, **Contact Us at info@niyulabs.com.**
