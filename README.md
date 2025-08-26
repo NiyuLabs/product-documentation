@@ -1,86 +1,58 @@
----
-description: >-
-  Whether you’re a business analyst, finance manager, or IT administrator, this
-  tool simplifies complex data workflows and brings the power of Odoo and Excel
-  together—no manual downloads, no data silos.
----
+# Pro Bigquery Connector
 
-# Excel Online Connector
+#### **Introduction: Unleashing Your Odoo Data with Google BigQuery**
 
-The **Odoo Excel Online Connector** empowers you to seamlessly integrate your Odoo ERP data with Microsoft Excel Online, enabling real-time reporting, advanced analytics, and streamlined collaboration. Built for security and efficiency, this connector leverages Azure Active Directory authentication and Microsoft Graph API to ensure safe, automated, and customizable data exports from Odoo to your Excel workbooks in OneDrive.
+In today's data-driven world, the information stored within your Odoo ERP is one of your most valuable assets. It contains a complete record of your customers, sales, inventory, financial transactions, and operational processes. However, analyzing this data directly within an operational system like Odoo can be challenging and resource-intensive. This is where Google BigQuery comes in.
 
-### Get Started <a href="#get-started" id="get-started"></a>
+**What is Google BigQuery?**
 
-* **Introduction:** Understand what the connector is and how it benefits your business.
-* **Key Features:** Explore the main capabilities and advantages of the connector.
-* **Setup & Installation:** Step-by-step instructions to install the module in Odoo.
-* **Initial Setup:** Guidance on configuring Azure credentials and verifying your connection.
+**Google BigQuery** is a fully-managed, serverless data warehouse that enables super-fast SQL queries using the processing power of Google's infrastructure. Think of it as a massive, intelligent database in the cloud designed specifically for large-scale data analysis.
 
-***
+Key benefits of using BigQuery include:
 
-### Why Use the Excel Online Connector? <a href="#why-use-the-excel-online-connector" id="why-use-the-excel-online-connector"></a>
+* **Blazing-Fast Speed:** Run complex analytical queries on terabytes of data in seconds, without worrying about performance tuning.
+* **Serverless & Scalable:** There is no infrastructure to manage. BigQuery automatically scales resources up or down to match the demands of your queries.
+* **Cost-Effective:** With its pay-as-you-go model, you only pay for the data you store and the queries you run, making it affordable for businesses of all sizes.
+* **Integrated AI and Machine Learning:** Leverage built-in machine learning capabilities (BigQuery ML) to create and execute models directly on your data using simple SQL commands.
 
-* **Faster Data Sync:** Always have the latest Odoo data in Excel for decision-making.
-* **Secure Integration:** Enterprise-grade security with Azure AD1.
-* **Customizable Exports:** Export exactly the data you need, when you need it.
-* **No More Manual Work:** Automate your reporting and analytics workflows.
+By moving your Odoo data into BigQuery, you transform it from a transactional record into a strategic asset ready for advanced business intelligence, reporting, and predictive analytics.
 
-***
+#### **The Niyulabs BigQuery Connector: A Smart Bridge for Your Data**
 
-### Quick Navigation <a href="#quick-navigation" id="quick-navigation"></a>
+While getting data into BigQuery is the goal, how you get it there matters. A basic connector might simply dump entire tables, which is inefficient, costly, and inflexible.
 
-* [Introduction](https://niyulabs.gitbook.io/doc/excel-online-connector/introduction)
-* [Key Features](https://niyulabs.gitbook.io/doc/excel-online-connector/key-features)
-* [Setup ](https://niyulabs.gitbook.io/doc/excel-online-connector/setup)
-* [Installation & Initial Setup](https://niyulabs.gitbook.io/doc/excel-online-connector/installation-and-initial-setup)
+The **Niyulabs BigQuery Connector for Odoo** is engineered to be a smart, efficient, and powerful bridge between your ERP and your data warehouse. It goes beyond simple exports by providing advanced features that give you precise control over your data pipeline. This ensures that your BigQuery datasets are clean, relevant, and cost-optimized from the start.
+
+Let's explore the key features that set this connector apart:
 
 ***
 
-### Visual Overview <a href="#visual-overview" id="visual-overview"></a>
+**1. Incremental Export: Sync Smarter, Not Harder**
 
-```
-text +----------------+           Secure API Calls         +---------------------+
-     |                |  ------------------------------->  |                     |
-     |    Odoo ERP    |                                    |    Microsoft Graph  |
-     |  (Your Data)   |  <-------------------------------  |    API & OneDrive   |
-     |                |           Authentication & Data    |                     |
-     +----------------+                                    +---------------------+
-          |                                                       |
-          |                                                       |
-          |                                                       |
-          v                                                       v
-     +---------------------------------------------------------------+
-     |                                                               |
-     |                  Excel Online Workbook                        |
-     |                (Stored in OneDrive)                           |
-     |                                                               |
-     +---------------------------------------------------------------+
-```
+* **What it is:** Instead of exporting the entire dataset every time you sync, Incremental Export intelligently identifies and sends **only the new or modified records** since the last successful export. It typically uses a date or ID field (like write\_date or id) to track changes.
+* **Why it Matters:**
+  * **Drastically Reduced Costs:** Google BigQuery charges for data ingestion. By sending only a fraction of the data on each sync, you significantly lower your operational costs.
+  * **Increased Speed and Efficiency:** Syncs that used to take hours can be completed in minutes, providing your analytics team with near real-time data.
+  * **Lower Server Load:** Reduces the performance impact on your live Odoo instance, as the connector only needs to process a small subset of data for each run.
 
-### How It Works:
+**2. Column Filtering: Export Only What You Need**
 
-* **Faster Data Sync:** No manual exports or imports; data flows automatically.
-* **Enterprise Security:** Uses Microsoft’s secure authentication protocols.
-* **Customizable:** Export only the data you need to the exact sheet and file you want.
-* **Collaboration-Ready:** Excel files can be shared and edited by multiple users simultaneously.
+* **What it is:** This feature provides a user-friendly interface in Odoo to select precisely which fields (columns) from a model you want to send to BigQuery. You can handpick the essential fields and exclude the rest.
+* **Why it Matters:**
+  * **Optimized Storage:** Keep your BigQuery tables lean and focused. By excluding irrelevant or redundant columns, you reduce storage costs and make datasets easier to query.
+  * **Enhanced Security and Privacy:** Easily exclude sensitive Personally Identifiable Information (PII) or other confidential data from your analytics environment, simplifying compliance with regulations like GDPR.
+  * **Data Clarity:** Provides cleaner, more manageable tables for data analysts, eliminating the need for them to sift through dozens of unnecessary columns.
 
-### Benefits of This Integration:
+**3. Domain Filtering: Granular Control Over Your Records**
 
-***
+* **What it is:** This powerful feature allows you to apply Odoo's native domain filter syntax to define exactly which records (rows) should be exported. This goes far beyond exporting an entire table, allowing you to create highly specific and targeted datasets.
+* **Example:** You could create a sync that exports only:
+  * Sales orders that are in the "Sale" or "Done" state: \[('state', 'in', \['sale', 'done'])]
+  * Partners located in the United States: \[('country\_id.code', '=', 'US')]
+  * Invoices created in the last fiscal year.
+* **Why it Matters:**
+  * **Targeted Analysis:** Create dedicated tables in BigQuery for specific business needs, such as a table for "European Confirmed Sales" or "High-Value US Customers."
+  * **Data Segmentation:** Easily segment your data for different departments or reports without needing complex SQL transformations in BigQuery later on.
+  * **Ultimate Flexibility:** Leverage the full power of Odoo’s filtering logic to handle any data export scenario you can imagine, directly from the connector's configuration.
 
-1. **Data Selection in Odoo:**\
-   Users select the Odoo models and fields they want to export via the connector’s export tasks.
-2. **Secure Authentication:**\
-   The connector uses Azure AD credentials (Tenant ID, Client ID, Client Secret, User UPN) to authenticate with Microsoft Graph API securely.
-3. **Token and Drive Management:**\
-   Access tokens and OneDrive Drive IDs are automatically managed by the connector to maintain uninterrupted access.
-4. **Data Export:**\
-   Data is pushed from Odoo directly into the specified Excel workbook and sheet on OneDrive.
-5. **Excel Online Access:**\
-   Users can open the Excel file online or via desktop Excel, with the latest Odoo data available for analysis, reporting, and collaboration.\
-
-
-***
-
-**Ready to get started?**\
-Jump to the [Installation & Initial Setup](https://niyulabs.gitbook.io/doc/excel-online-connector/installation-and-initial-setup) section or explore the [Key Features](https://niyulabs.gitbook.io/doc/excel-online-connector/key-features) to see what this connector can do for you.
+By combining these advanced features, the Niyulabs BigQuery Connector transforms your Odoo-to-BigQuery integration from a simple data dump into a strategic, efficient, and highly-controlled business intelligence pipeline.
