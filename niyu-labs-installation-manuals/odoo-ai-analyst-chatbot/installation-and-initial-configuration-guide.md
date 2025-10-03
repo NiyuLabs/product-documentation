@@ -45,7 +45,7 @@ There are two primary methods for installing custom Odoo modules:
    * Caption: Locate and install the Niyulabs AI Analyst Chatbot from the Odoo Apps menu.
 4. Odoo will now install the module, which may take a few moments as it sets up necessary database tables and configurations.
 
-<figure><img src="../.gitbook/assets/niyu-app.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/niyu-app.png" alt=""><figcaption></figcaption></figure>
 
 #### Step 4: Initial Configuration: Connect to Your LLM (OpenAI)
 
@@ -62,7 +62,7 @@ After installation, the most crucial step is to link your Odoo instance to the e
 4. **Save Changes:** Ensure you **Save** the changes made on this settings page.
    * Caption: Configure your OpenAI API key and other settings within the dedicated Niyulabs AI Analyst section in Odoo Settings.
 
-<figure><img src="../.gitbook/assets/settings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings.png" alt=""><figcaption></figcaption></figure>
 
 #### Step 5: User Permissions
 
@@ -85,7 +85,7 @@ Now that everything is set up, it's time to test your new AI Analyst!
    * You will find a new menu item, usually labeled "Niyulabs AI Analyst" or "AI Analyst," in your main Odoo navigation bar. Click on it to open the chatbot interface.
    * Caption: The intuitive Niyulabs AI Analyst chatbot interface, ready for your data queries.
 
-<figure><img src="../.gitbook/assets/niyu-ai.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/niyu-ai.png" alt=""><figcaption></figcaption></figure>
 
 1. **Ask Your First Question:**
    * In the chat window, type a simple question related to your Odoo data, for example:

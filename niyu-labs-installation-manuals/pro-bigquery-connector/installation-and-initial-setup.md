@@ -4,7 +4,7 @@
 
 The official installation and setup guide for the Niyu Labs Google BigQuery Connector. Unlock your Odoo data's full potential by integrating it with Google's powerful analytics platform.
 
-<figure><img src="../.gitbook/assets/Big-Query01.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Big-Query01.gif" alt=""><figcaption></figcaption></figure>
 
 #### **1. Requirements**
 
@@ -77,7 +77,7 @@ Now, let's connect Odoo to BigQuery using the credentials you just created.
    * Open the downloaded **JSON key file** in a text editor, copy its entire contents, and paste it into the **BigQuery Credentials JSON** field.
    * Click **SAVE**.
 
-<figure><img src="../.gitbook/assets/cred.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cred.png" alt=""><figcaption></figcaption></figure>
 
 **Test the Connection:**
 
@@ -91,7 +91,7 @@ The Niyu Labs connector uses **Export Configurations** to give you granular cont
 
 Navigate to **Settings → Technica → Database Structure → BigQuery Export Configurations** and click **Create**.
 
-<figure><img src="../.gitbook/assets/query.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/query.png" alt=""><figcaption></figcaption></figure>
 
 **Step 1: Basic Setup**
 
@@ -110,7 +110,7 @@ Navigate to **Settings → Technica → Database Structure → BigQuery Export C
 * Use the **Domain Filter** field to specify exactly which records to export using Odoo's domain syntax.
 * **Example:** To export only confirmed sales orders, use: \[('state', 'in', \['sale', 'done'])]
 
-<figure><img src="../.gitbook/assets/domain_filtering.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/domain_filtering.png" alt=""><figcaption></figcaption></figure>
 
 **Step 4: The 'One-Click' Automated Sync**
 
@@ -120,7 +120,7 @@ This is where the magic happens. No need to manually create complex cron jobs!
 * **Sync Field:** Select a date field to track changes. write\_date is recommended to capture both new and updated records.
 * **Sync Frequency:** Choose how often you want the sync to run (e.g., Hourly, Daily, Weekly). The connector automatically creates and manages the scheduled action for you. **And boom, your automation is live!**
 
-<figure><img src="../.gitbook/assets/incremental.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/incremental.png" alt=""><figcaption></figcaption></figure>
 
 #### **6. Execution and Verification**
 
