@@ -11,7 +11,7 @@ The official installation and setup guide for the Niyu Labs Google BigQuery Conn
 Before starting, please ensure you have the following:
 
 * **Odoo Instance:**
-  * **Versions Supported:** 12, 13, 14, 15, 16, 17,18
+  * **Versions Supported:** 12, 13, 14, 15, 16, 17, 18, 19
   * **Edition:** Enterprise or Community
 * **Google Cloud Platform Account:** An active account with the **BigQuery API** enabled.
 * **Permissions:**
